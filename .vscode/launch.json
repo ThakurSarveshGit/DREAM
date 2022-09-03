@@ -1,0 +1,30 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        
+        {
+            "name": "/media/Dawn/PhD/DREAM/DREAM/scripts/train_network.py",
+            "type": "python",
+            "request": "launch",
+            "program": "/media/Dawn/PhD/DREAM/DREAM/scripts/train_network.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "args": [
+                "--i", "data/baxter_synth_test_dr/",
+                "--t", "0.8",
+                "-m", "manip_configs/baxter.yaml",
+                "-ar", "arch_configs/dream_vgg_q.yaml",
+                "-e", "25",
+                "-lr", "0.00015",
+                "-b", "128",
+                "-w", "6" ,
+                "-o", "training/results/"
+            ]
+        }
+    ]
+}
+
+//python scripts/train_network.py -i data/synthetic/panda_synth_train_dr/ -t 0.8 -m manip_configs/panda.yaml -ar arch_configs/dream_hourglass_example.yaml -e 25 -lr 0.00015 -b 128 -w 16 -o <path/to/output_dir/>

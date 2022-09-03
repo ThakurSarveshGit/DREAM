@@ -6,13 +6,14 @@ import argparse
 import math
 import os
 from PIL import Image as PILImage
+from dream import *
+
 
 import numpy as np
 from ruamel.yaml import YAML
 import torch
 import torchvision.transforms as TVTransforms
 
-import dream
 
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 

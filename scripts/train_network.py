@@ -482,11 +482,7 @@ def train_network(args):
 
             if args.verbose:
                 print("Processing batch index {} for training...".format(batch_idx))
-                print(
-                    "Sample names in this training batch: {}".format(
-                        this_batch_sample_names
-                    )
-                )
+                print("Sample names in this training batch: {}".format(this_batch_sample_names))
                 print("This training batch size: {}".format(this_batch_size))
 
             # New unified training

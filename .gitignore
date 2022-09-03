@@ -1,3 +1,6 @@
 analyze_results/*.png
 __pycache__/
 training_results/
+data/
+result/
+trained_models/
